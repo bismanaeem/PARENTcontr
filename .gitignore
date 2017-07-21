@@ -27,3 +27,4 @@ nbdist/
 bin/com/movies/exception/handler/TechnicalFailureExceptionHandler.class
 *.class
 *.class
+*.class
