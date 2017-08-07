@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "ParentalControlService",
-		"_postman_id": "0c567fc8-7021-6a0f-2686-3ebacc5e00d1",
+		"_postman_id": "c26bdfae-971c-6933-23ef-0da8bbd43cfe",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -14,12 +14,14 @@
 					"listen": "test",
 					"script": {
 						"type": "text/javascript",
-						"exec": "tests[\"Body is correct\"] = responseBody === \"true\";"
+						"exec": [
+							"tests[\"Body is correct\"] = responseBody === \"true\";"
+						]
 					}
 				}
 			],
 			"request": {
-				"url": "localhost:8080/parental-control",
+				"url": "localhost:7171/parental-control",
 				"method": "POST",
 				"header": [
 					{
@@ -43,12 +45,14 @@
 					"listen": "test",
 					"script": {
 						"type": "text/javascript",
-						"exec": "tests[\"Body is correct\"] = responseBody === \"true\";"
+						"exec": [
+							"tests[\"Body is correct\"] = responseBody === \"true\";"
+						]
 					}
 				}
 			],
 			"request": {
-				"url": "localhost:8080/parental-control",
+				"url": "localhost:7171/parental-control",
 				"method": "POST",
 				"header": [
 					{
@@ -72,12 +76,14 @@
 					"listen": "test",
 					"script": {
 						"type": "text/javascript",
-						"exec": "tests[\"Body is correct\"] = responseBody === \"false\";"
+						"exec": [
+							"tests[\"Body is correct\"] = responseBody === \"false\";"
+						]
 					}
 				}
 			],
 			"request": {
-				"url": "localhost:8080/parental-control",
+				"url": "localhost:7171/parental-control",
 				"method": "POST",
 				"header": [
 					{
@@ -101,12 +107,14 @@
 					"listen": "test",
 					"script": {
 						"type": "text/javascript",
-						"exec": "tests[\"Body matches string\"] = responseBody.has(\"This movie title is not found.\");"
+						"exec": [
+							"tests[\"Body matches string\"] = responseBody.has(\"This movie title is not found.\");"
+						]
 					}
 				}
 			],
 			"request": {
-				"url": "localhost:8080/parental-control",
+				"url": "localhost:7171/parental-control",
 				"method": "POST",
 				"header": [
 					{
@@ -130,12 +138,14 @@
 					"listen": "test",
 					"script": {
 						"type": "text/javascript",
-						"exec": "tests[\"Body is correct\"] = responseBody === \"false\";"
+						"exec": [
+							"tests[\"Body is correct\"] = responseBody === \"false\";"
+						]
 					}
 				}
 			],
 			"request": {
-				"url": "localhost:8080/parental-control",
+				"url": "localhost:7171/parental-control",
 				"method": "POST",
 				"header": [
 					{
