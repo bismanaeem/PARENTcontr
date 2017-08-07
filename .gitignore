@@ -28,3 +28,8 @@ bin/com/movies/exception/handler/TechnicalFailureExceptionHandler.class
 *.class
 *.class
 *.class
+*.class
+bin/com/movies/exception/handler/TechnicalFailureExceptionHandler.class
+*.class
+*.class
+*.class

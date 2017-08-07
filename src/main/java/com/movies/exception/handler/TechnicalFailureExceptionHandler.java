@@ -12,7 +12,7 @@ public class TechnicalFailureExceptionHandler {
 
 	@ExceptionHandler(TechnicalFailureException.class)
 	public ResponseEntity<Boolean> handle() {
-		return new ResponseEntity<Boolean>(Boolean.FALSE, HttpStatus.INTERNAL_SERVER_ERROR);
+		return new ResponseEntity<Boolean>(Boolean.FALSE, HttpStatus.OK);
 	}
 
 }
